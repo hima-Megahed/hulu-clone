@@ -4,7 +4,7 @@ import Nav from "../components/Nav";
 import Results from "../components/Results";
 import Requests from "../utils/requests";
 
-export default function Home({ requests, genre }) {
+export default function Home({ requests }) {
   return (
     <div>
       <Head>
@@ -33,7 +33,6 @@ export async function getServerSideProps(context) {
   return {
     props: {
       requests,
-      genre: genre || "default",
     },
   };
 }
