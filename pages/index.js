@@ -5,8 +5,6 @@ import Results from "../components/Results";
 import Requests from "../utils/requests";
 
 export default function Home({ requests, genre }) {
-  console.log(genre);
-  console.log(requests.results.map((r) => r.title));
   return (
     <div>
       <Head>
